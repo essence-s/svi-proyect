@@ -1,0 +1,151 @@
+.background-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background: #00000000;
+    transition: 1s ease-in-out;
+    display: none;
+}
+
+.back-modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    width: 0%;
+    height: 0%;
+    background: #1a1a1a;
+    border-radius: 15px;
+    border: solid 1px #ffffff00;
+    /* transition: 0.5s ease-in-out; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anim {
+    /* width: 80%;
+    height: 90%; */
+    border: solid 1px #ffffff1c;
+    animation: superanim 0.5s ease-in-out forwards;
+}
+
+.animrev {
+    /* width: 80%;
+    height: 90%;
+    border: solid 1px #ffffff1c; */
+    animation: superanim2 0.5s ease-in-out forwards;
+}
+
+.anim2 {
+    /* background: #0000005c; */
+    /* transition: 1s ease-in-out; */
+    animation: probar 1s ease forwards;
+    display: flex;
+}
+
+.anim2rev {
+    /* background: #0000005c; */
+    /* transition: 1s ease-in-out; */
+    animation: probar2 1s ease forwards;
+    /* display: flex; */
+}
+
+.dn-modal {
+    display: none;
+}
+
+.normal-modal {
+    display: flex;
+}
+
+.modal_close {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    /* border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px; */
+    cursor: pointer;
+}
+
+.modal_close:hover {
+    background: #e57e7e;
+    border-radius: 50%;
+}
+
+@keyframes superanim {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    50% {
+        width: 80%;
+        height: 2%;
+    }
+
+    100% {
+        width: 80%;
+        height: 90%;
+    }
+}
+
+@keyframes superanim2 {
+    0% {
+        width: 80%;
+        height: 90%;
+    }
+
+    50% {
+        width: 80%;
+        height: 2%;
+    }
+
+    100% {
+        width: 0%;
+        height: 0%;
+    }
+}
+
+@keyframes probar {
+    0% {
+        display: none;
+    }
+
+    50% {
+        display: flex;
+    }
+
+    100% {
+        display: flex;
+        background: #0000005c;
+    }
+}
+
+@keyframes probar2 {
+    0% {
+        display: flex;
+        background: #0000005c;
+    }
+
+    50% {
+        display: flex;
+    }
+
+    100% {
+        display: none;
+    }
+}

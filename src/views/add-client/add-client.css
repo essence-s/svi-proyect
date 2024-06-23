@@ -1,0 +1,49 @@
+.add-client {
+    display: flex;
+    /* justify-content: center; */
+    gap: 25px;
+}
+
+.add-client__section {
+    /* gap: 15px; */
+}
+
+
+
+/* BOX DATA USERS */
+.box-data-users {
+    padding: 10px;
+    border-radius: 15px;
+    background: #5858584f;
+    display: grid;
+    /* flex-direction: column; */
+    gap: 10px;
+    border: solid 1px #ffffff0d;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 14px;
+    text-align: center;
+}
+
+.box-data-users__card {
+    padding: 20px;
+    border-radius: 15px;
+    background: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.box-data-users__img-user {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #dbd048;
+    margin: auto;
+}
+
+.box-data-users__dni,
+.box-data-users__phone {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,43 @@
+.switchTheme {
+    width: 43px;
+    background: #444444;
+    border-radius: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding: 4px 5px;
+    border: solid 1px white;
+    cursor: pointer;
+    position: relative;
+}
+
+.switchTheme-contentIconLeft {
+    display: flex;
+    width: 9px;
+    left: 2px;
+    position: absolute;
+}
+
+.switchTheme-contentIconRight {
+    display: flex;
+    position: absolute;
+    width: 10px;
+    right: 2px;
+}
+
+.switchTheme-contentIconLeft img,
+.switchTheme-contentIconRight img {
+    width: 100%;
+}
+
+.switchTheme span {
+    width: 15px;
+    height: 15px;
+    /* background: #fdfdff; */
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5s ease;
+    transform: translate(0px, 0px);
+    z-index: 1;
+}

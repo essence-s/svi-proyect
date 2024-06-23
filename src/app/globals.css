@@ -2,10 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --border1px: solid 1px var(--border-color);
+
+  --prueba: #8c00ff;
+
+  /* old color oscuro */
+  /* #1a1a1a */
+
+  --primary-color: #ffffff;
+  --secondary-color: #5d75b8;
+  --accent-color: #efefef;
+  --text-primary: #353535;
+  --text-secondary: #ecebeb;
+  --bg-primary: #ffffff;
+  --list-primary: #5d75b8;
+  --list-secondary: #e6e8ec;
+
+  --border-color: #2525253f;
+  --link-color: #2150a8;
+  --disabled-color: #474747;
+  --circle-dash: #5d75b8a6;
+
+  /* Tipografy */
+  --font-family: 'san serif';
+  --font-size-default: 0.88rem;
+  --font-size-large: 1rem;
+  --font-size-small: 0.8rem;
+
+  /* Space Size */
+  --spacing-unit: #000000;
+  --border-radius: 15px;
+  --border-radius-secondary: 10px;
+
+  /* Shadows */
+  --box-shadow: 5px 5px 5px 0px #00000010;
+}
+
+
+
+.theme-dark {
+  --primary-color: #161521;
+  --secondary-color: #f7dc6d;
+  --accent-color: #1b1a25;
+  --text-primary: #ececec;
+  --text-secondary: #0e0e0e;
+  --bg-primary: #12111a;
+  --list-primary: #f7dc6d;
+  --list-secondary: rgb(43, 41, 58);
+
+  --border-color: #ffffff12;
+  --link-color: #2150a8;
+  --disabled-color: #474747;
+  --circle-dash: #f1d84b52;
+
+  /* Tipografy */
+  --font-family: 'san serif';
+  --font-size-default: 0.88rem;
+  --font-size-large: 1rem;
+  --font-size-small: 0.8rem;
+
+  /* Space Size */
+  --spacing-unit: #000000;
+  --border-radius: 15px;
+  --border-radius-secondary: 10px;
+
+  /* Shadows */
+  --box-shadow: 5px 5px 5px 0px #00000030;
+
+
+  --border1px: solid 1px var(--border-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +87,121 @@
   }
 }
 
+/* html {
+  font-size: var(--font-size-default);
+} */
 body {
+
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background: #060606;
 }
+
+
+
+/* ADD CLIENT FORM  */
+.basic-form {
+  background: var(--primary-color);
+  color: var(--text-primary);
+  border-radius: var(--border-radius);
+  border: var(--border1px);
+  font-size: var(--font-size-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  height: 362px;
+  text-align: center;
+}
+
+.basic-form__title {
+  font-size: var(--font-size-large);
+  font-weight: 500;
+  /* background: linear-gradient(180deg, rgb(181 27 76), rgb(219 60 91)); */
+  padding: 20px 25px 0 25px;
+  /* color: white; */
+}
+
+.basic-form__group {
+  padding: 25px;
+}
+
+.basic-form__input-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basic-form__input-wrapper label {
+  /* d */
+}
+
+.basic-form__input-wrapper>label>span {
+  position: relative;
+  /* top: 10px; */
+  /* left: 10px; */
+  /* background: #1a1a1a; */
+  padding: 0px 8px;
+  /* width: max-content; */
+}
+
+.basic-form__input-wrapper>label>input {
+  background: var(--primary-color);
+  border: solid 1px #cccccc4f;
+  padding: 8px 9px;
+  border-radius: var(--border-radius-secondary);
+  box-shadow: 1px 1px 4px 1px #0000004f;
+  width: 100%;
+}
+
+.basic-form__inputs-data-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.basic-form__inputs-data-wrapper label,
+.basic-form__input-wrapper label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+}
+
+.basic-form__inputs-data-wrapper label input {
+  width: 100%;
+  background: var(--primary-color);
+  border: solid 1px var(--border-color);
+  padding: 8px 9px;
+  border-radius: var(--border-radius-secondary);
+  box-shadow: 1px 1px 3px 0px #0000001f;
+}
+
+/* a los que lleven como clase dd se les añadira un dashed */
+.basic-form__inputs-data-wrapper input.dd {
+  background: linear-gradient(45deg, transparent, #ffffff0c);
+  border: dashed 1px var(--border-color);
+  /* box-shadow: -1px 0px 0 0px #00000047; */
+  text-align: center;
+  font-weight: 600;
+}
+
+.basic-form button {
+  padding: 10px 10px;
+  background: var(--secondary-color);
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text-secondary);
+  border-radius: var(--border-radius-secondary);
+  width: 100%;
+}
+
+/*END ADD CLIENT FORM  */

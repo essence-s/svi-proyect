@@ -1,0 +1,49 @@
+.car-wash-status {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.car-wash-status__box {
+    padding: 10px;
+    border-radius: 15px;
+    background: #5858584f;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px #ffffff0d;
+}
+
+.car-wash-status__card {
+    padding: 20px;
+    border-radius: 15px;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--text-primary);
+}
+
+.car-wash-status__info-services-products {
+    display: flex;
+    font-size: 11px;
+    gap: 5px;
+}
+
+.car-wash-status__info-services-products span {
+    border-radius: 8px;
+    padding: 0 8px;
+    /* font-weight: 800; */
+}
+
+.car-wash-status__lavado {
+    background: #37daf7;
+}
+
+.car-wash-status__product {
+    background: #37f737;
+}
+
+.car-wash-status__arreglos {
+    background: #f737dd;
+}

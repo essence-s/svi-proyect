@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.compoaside {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    height: 100vh;
+}
+
+aside {
+    /* background: linear-gradient(0deg, #1a1a1e, #202027); */
+    height: 100%;
+    font-weight: 500;
+    max-width: 125px;
+    padding: 0 7px;
+    border-radius: var(--border-radius-secondary);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+
+    backdrop-filter: blur(15px);
+    /* background: linear-gradient(0deg, #1a1a1e59, #51515370); */
+}
+
+.asideTitle {
+    color: white;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+.asideTitle img {
+    width: 67px;
+    margin: auto;
+}
+
+.aside {
+    padding: 0;
+    width: 100%;
+    max-width: 360px;
+    list-style: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.composide__icon {
+    display: flex;
+    place-content: center;
+    margin: 4px 0 8px 0px;
+    filter: drop-shadow(0px 0px 2px #ffffffb2);
+}
+
+.aside>li {
+    position: relative;
+}
+
+.aside>li .opciAsi {
+    cursor: pointer;
+    display: block;
+    padding: 5px 9px 9px 9px;
+    /* background: #151945; */
+    color: var(--text-primary);
+    font-size: 12px;
+    /* font-weight: 700; */
+    /* border-bottom: 1px solid #0f1130; */
+    position: relative;
+    transition: all 0.4s ease;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aside>li>a {
+    text-decoration: none;
+    text-shadow: 0px 0px 2px #ffffff96;
+
+}
+
+.aside>li .opciAsi i {
+    /*position: absolute; */
+    /* top: 16px; */
+    /* left: 40px; */
+    font-size: 18px;
+    color: inherit;
+    transition: all 0.4s ease;
+    color: white;
+    margin: 4px 0 8px 0px;
+}
+
+.aside>li .raita {
+    padding: 5px 9px 5px 9px;
+}
+
+.aside>li .raita span {
+
+    /* margin: 0px 9px 9px 9px; */
+    height: 1px;
+    background: linear-gradient(60deg, #0000002b, #565765, #0000001e);
+    width: 100%;
+    display: block;
+}
+
+.aside li:last-child .raita {
+    overflow: hidden;
+    padding: 0;
+    height: 0px;
+}
+
+.aside>li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.aside>li:hover .opciul {
+    max-height: 100vh;
+    max-width: 140px;
+}
+
+.aside>li:hover i.fa-chevron-down {
+    transform: rotateZ(180deg);
+    transition: 0.3s;
+}
+
+.aside .opciAsi:hover {
+    color: var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 3px 4px 4px #00000066;
+}
+
+.aside .opciAsi.selectOption {
+    color: var(--secondary-color);
+    /* border-radius: 15px; */
+    /* box-shadow: 3px 4px 4px rgb(0, 0, 0, 0.4); */
+}
+
+.opciul {
+    position: absolute;
+    max-height: 0;
+    max-width: 0;
+    /* width: 100%;
+    height: 100vh; */
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 14px;
+    left: 115%;
+    top: 15%;
+    /* z-index: 1; */
+    border-radius: 1px;
+    display: flex;
+}
+
+.dindinoop {
+    position: relative;
+    z-index: -1;
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-top: 3px solid transparent;
+    border-left: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    transform: rotate(180deg);
+}
+
+.opciul ul {
+    list-style: none;
+    padding: 0px;
+    width: 140px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.opciul li {
+    border-bottom: 1px solid #98979729;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-weight: 600;
+    background: var(--list-primary);
+    font-weight: 400;
+    transition: 0.4s;
+}
+
+.opciul li:hover {
+    background: var(--list-secondary);
+    /* font-weight: 600; */
+    color: var(--text-primary);
+    /* box-shadow: inset 0 0 20px 20px var(--accent-color); */
+}
+
+.opciul li a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    aside {
+        display: none;
+    }
+}

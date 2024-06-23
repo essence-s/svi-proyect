@@ -1,7 +1,12 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+// import { Inter } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
+import './globals.css'
+import useTheme from '@/hooks/useTheme'
+import { DivSwitchTheme } from '@/components/switch-theme/switch-theme'
+
+
+const inter = Nunito_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,9 +14,25 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+  // const invoke = window.__TAURI__.invoke
+
+  // let { theme } = useTheme()
+
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={inter.className}
+      >
+        <DivSwitchTheme data={{ c0: "default", c2: "theme-dark" }}>
+          {children}
+        </DivSwitchTheme>
+        {/* {modal} */}
+
+        {/* <Link href={'/flota'}>lalal</Link> */}
+        <div id="modal-root"></div>
+      </body>
     </html>
   )
 }

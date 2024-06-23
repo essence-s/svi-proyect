@@ -1,0 +1,56 @@
+.gridAP {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-primary);
+    font-weight: 400;
+
+    /* no borrar wa poner lo de aka */
+    /* background: #151721 */
+}
+
+.circledash {
+    height: 350px;
+    width: 350px;
+    background: var(--circle-dash);
+    position: absolute;
+    z-index: 0;
+    top: -172px;
+    left: -64px;
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+.gridAP1 {
+    z-index: 10;
+}
+
+.gridAP2 {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorNe {
+    /* height: 800px; */
+    overflow: auto;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 35px 10px 10px 35px;
+    flex: 1;
+}
+
+.contenedorNe::-webkit-scrollbar {
+    width: 9px;
+    background-color: #CECECE
+}
+
+/* .contenedorNe::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.973);
+    } */
+
+.contenedorNe::-webkit-scrollbar-thumb {
+    background-color: #A6A6AB;
+    /* outline: 1px solid rgb(164, 92, 167); */
+}
