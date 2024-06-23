@@ -1,8 +1,8 @@
-import useFakeDB from "@/hooks/useFakeDB"
+// import useFakeDB from "@/hooks/useFakeDB"
 
-export default function listClientService() {
+// export default function listClientService() {
 
-    let { list } = useFakeDB()
+//     let { list } = useFakeDB()
 
-    return list
-}
+//     return list
+// }

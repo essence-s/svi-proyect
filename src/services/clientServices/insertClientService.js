@@ -1,7 +1,7 @@
-import useFakeDB from "@/hooks/useFakeDB";
+// import useFakeDB from "@/hooks/useFakeDB";
 
-export default function insertClient() {
-    let { add } = useFakeDB()
+// export default function insertClient() {
+//     let { add } = useFakeDB()
 
-    add(data)
-}
+//     // add(data)
+// }
